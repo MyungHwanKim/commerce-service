@@ -33,6 +33,9 @@ class SignUpCustomerServiceTest {
 
         // then
         assertNotNull(customer.getId());
+        assertEquals("name", customer.getName());
+        assertEquals("abc@gmail.com", customer.getEmail());
+        assertEquals("01000000000", customer.getPhone());
         assertNotNull(customer.getCreatedAt());
     }
 }

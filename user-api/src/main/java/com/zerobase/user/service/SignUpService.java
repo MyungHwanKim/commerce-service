@@ -32,7 +32,7 @@ public class SignUpService {
         SendMailForm sendMailForm = SendMailForm.builder().from("tester@gmail.com")
                 .to(form.getEmail())
                 .subject("Verification Email")
-                .text(getVerificationEmailBody(form.getEmail(), form.getName(), getRandomCode()))
+                .text(getVerificationEmailBody(form.getEmail(), form.getName(), code))
                 .build();
         mailgunClient.sendEmail(sendMailForm);
         signUpCustomerService.changeCustomerValidateEmail(customer.getId(), code);
