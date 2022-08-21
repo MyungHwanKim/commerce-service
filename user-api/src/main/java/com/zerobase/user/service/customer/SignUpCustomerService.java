@@ -1,4 +1,4 @@
-package com.zerobase.user.service;
+package com.zerobase.user.service.customer;
 
 import com.zerobase.user.domain.SignUpForm;
 import com.zerobase.user.exception.CustomException;
