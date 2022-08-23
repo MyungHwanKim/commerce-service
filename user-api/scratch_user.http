@@ -50,8 +50,8 @@ Content-Type: application/json
   "phone": "01000000000"
 }
 
-### 이메일 인증 (고객)
-GET http://localhost:8081/signUp/seller/verify?email=kmh9250@naver.com&code=yxJVGPhQAq
+### 이메일 인증 (셀러)
+GET http://localhost:8081/signUp/seller/verify?email=kmh9250@naver.com&code=wCkcjvLQUq
 
 ### 로그인 (셀러)
 POST http://localhost:8081/signIn/seller

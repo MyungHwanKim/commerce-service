@@ -3,6 +3,7 @@ package com.zerobase.user.service;
 import com.zerobase.user.domain.SignUpForm;
 import com.zerobase.user.model.Customer;
 import com.zerobase.user.service.customer.SignUpCustomerService;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,6 +19,7 @@ class SignUpCustomerServiceTest {
     private SignUpCustomerService signUpCustomerService;
 
     @Test
+    @DisplayName("회원 가입하는 경우 - 회원 가입 성공")
     void SignUp() {
         // given
         SignUpForm form = SignUpForm.builder()
