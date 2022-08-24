@@ -1,7 +1,7 @@
 ### 상품 등록 (셀러)
 POST http://localhost:8082/seller/product
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaTXk2UlFwKzU3V2Vyc2toMi9oanoxSEZYQ3VkU0ZxRmxobVQvSWlRbTFFPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjYxMjYxMDcxLCJleHAiOjE2NjEzNDc0NzF9.UxdwNUAjumzp5xg8QP4MJfLK6zDoORHbPrBOUSx5cIk
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaTXk2UlFwKzU3V2Vyc2toMi9oanoxSEZYQ3VkU0ZxRmxobVQvSWlRbTFFPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjYxMzU3NDU0LCJleHAiOjE2NjE0NDM4NTR9.bYApqfKdnzfTNZYLdfSzh_rmh2DpAfwECp-HBOsRDM4
 
 {
   "description": "상품 설명",
@@ -19,7 +19,7 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaTXk2UlFwKzU3V2Vyc2toMi9oanoxSEZYQ
 ### 상품 아이템 추가 (셀러)
 POST http://localhost:8082/seller/product/item
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaTXk2UlFwKzU3V2Vyc2toMi9oanoxSEZYQ3VkU0ZxRmxobVQvSWlRbTFFPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjYxMjYxMDcxLCJleHAiOjE2NjEzNDc0NzF9.UxdwNUAjumzp5xg8QP4MJfLK6zDoORHbPrBOUSx5cIk
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaTXk2UlFwKzU3V2Vyc2toMi9oanoxSEZYQ3VkU0ZxRmxobVQvSWlRbTFFPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjYxMzU3NDU0LCJleHAiOjE2NjE0NDM4NTR9.bYApqfKdnzfTNZYLdfSzh_rmh2DpAfwECp-HBOsRDM4
 
 {
   "count": 1,
@@ -46,10 +46,11 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaTXk2UlFwKzU3V2Vyc2toMi9oanoxSEZYQ
   "id": 1,
   "name": "나이키 에어포스 한정판"
 }
+
 ### 상품 아이템 수정
 PUT http://localhost:8082/seller/product/item
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaTXk2UlFwKzU3V2Vyc2toMi9oanoxSEZYQ3VkU0ZxRmxobVQvSWlRbTFFPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjYxMjYxMDcxLCJleHAiOjE2NjEzNDc0NzF9.UxdwNUAjumzp5xg8QP4MJfLK6zDoORHbPrBOUSx5cIk
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaTXk2UlFwKzU3V2Vyc2toMi9oanoxSEZYQ3VkU0ZxRmxobVQvSWlRbTFFPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjYxMzU3NDU0LCJleHAiOjE2NjE0NDM4NTR9.bYApqfKdnzfTNZYLdfSzh_rmh2DpAfwECp-HBOsRDM4
 
 {
   "id": 1,
@@ -57,3 +58,27 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaTXk2UlFwKzU3V2Vyc2toMi9oanoxSEZYQ
   "name": "280",
   "price": 100000
 }
+
+### 상품 삭제
+DELETE http://localhost:8082/seller/product?id=1
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaTXk2UlFwKzU3V2Vyc2toMi9oanoxSEZYQ3VkU0ZxRmxobVQvSWlRbTFFPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjYxMzU3NDU0LCJleHAiOjE2NjE0NDM4NTR9.bYApqfKdnzfTNZYLdfSzh_rmh2DpAfwECp-HBOsRDM4
+
+{
+  "description": "상품 설명",
+  "items": [
+    {
+      "id": 1,
+      "count": 1,
+      "name": "280",
+      "price": 100000
+    }
+  ],
+  "id": 1,
+  "name": "나이키 에어포스 한정판"
+}
+
+### 상품 아이템 삭제
+DELETE http://localhost:8082/seller/product/item?id=2
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaTXk2UlFwKzU3V2Vyc2toMi9oanoxSEZYQ3VkU0ZxRmxobVQvSWlRbTFFPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjYxMzU3NDU0LCJleHAiOjE2NjE0NDM4NTR9.bYApqfKdnzfTNZYLdfSzh_rmh2DpAfwECp-HBOsRDM4
