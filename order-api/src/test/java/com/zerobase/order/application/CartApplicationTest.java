@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 class CartApplicationTest {
 
     @Autowired
-    private CartApplication cartApplication;
+    private CartCustomerApplication cartCustomerApplication;
     @Autowired
     private ProductService productService;
     @Autowired
@@ -31,7 +31,7 @@ class CartApplicationTest {
     void ADD_MODIFY_TEST() {
         // given
         Long customerId = 100L;
-        cartApplication.clearCart(customerId);
+        cartCustomerApplication.clearCart(customerId);
         Product product = add_product();
 
         // when
@@ -50,11 +50,11 @@ class CartApplicationTest {
 
 
 
-        Cart cart = cartApplication.addCart(customerId, makeAddForm(result));
+        Cart cart = cartCustomerApplication.addCart(customerId, makeAddForm(result));
         // 데이터가 잘 들어 갔는지
         assertEquals(cart.getMessages().size(), 0);
 
-        cart = cartApplication.getCart(customerId);
+        cart = cartCustomerApplication.getCart(customerId);
         assertEquals(cart.getMessages().size(), 1);
     }
 
