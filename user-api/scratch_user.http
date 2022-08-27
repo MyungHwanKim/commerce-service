@@ -11,7 +11,7 @@ Content-Type: application/json
 }
 
 ### 이메일 인증 (고객)
-GET http://localhost:8081/signUp/customer/verify?email=kmh9250@naver.com&code=Jm5dpcBZmr
+GET http://localhost:8081/signUp/customer/verify?email=kmh9250@naver.com&code=Tz4pRatkHI
 
 ### 로그인 (고객)
 POST http://localhost:8081/signIn/customer
@@ -25,12 +25,12 @@ Content-Type: application/json
 ### 회원 정보 조회 (고객)
 GET http://localhost:8081/customer/getInfo
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaTXk2UlFwKzU3V2Vyc2toMi9oanoxSEZYQ3VkU0ZxRmxobVQvSWlRbTFFPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2NjExODg2ODQsImV4cCI6MTY2MTI3NTA4NH0.fmOn2f04qO4iiSQyKW0DEOnhKVPC4qWbCgWkZ0YKNBw
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaTXk2UlFwKzU3V2Vyc2toMi9oanoxSEZYQ3VkU0ZxRmxobVQvSWlRbTFFPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2NjE1MzMxMjUsImV4cCI6MTY2MTYxOTUyNX0.Rb18K6NOcD4BRjYF1CsIPLQjvGJ0eVKO6CJP7LJkwxk
 
 ### 잔액 변경 (고객)
 POST http://localhost:8081/customer/balance
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaTXk2UlFwKzU3V2Vyc2toMi9oanoxSEZYQ3VkU0ZxRmxobVQvSWlRbTFFPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2NjExODg2ODQsImV4cCI6MTY2MTI3NTA4NH0.fmOn2f04qO4iiSQyKW0DEOnhKVPC4qWbCgWkZ0YKNBw
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaTXk2UlFwKzU3V2Vyc2toMi9oanoxSEZYQ3VkU0ZxRmxobVQvSWlRbTFFPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2NjE1MzMxMjUsImV4cCI6MTY2MTYxOTUyNX0.Rb18K6NOcD4BRjYF1CsIPLQjvGJ0eVKO6CJP7LJkwxk
 
 {
   "from": "server",
