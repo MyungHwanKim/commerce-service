@@ -1,12 +1,9 @@
 package com.zerobase.user.service;
 
-import static com.zerobase.user.exception.ErrorCode.ALREADY_REGISTER_USER;
-
 import com.zerobase.user.client.MailgunClient;
 import com.zerobase.user.client.mailgun.SendMailForm;
 import com.zerobase.user.domain.SignUpForm;
 import com.zerobase.user.exception.CustomException;
-import com.zerobase.user.exception.ErrorCode;
 import com.zerobase.user.model.Customer;
 import com.zerobase.user.model.Seller;
 import com.zerobase.user.service.customer.SignUpCustomerService;
@@ -14,6 +11,8 @@ import com.zerobase.user.service.seller.SignUpSellerService;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.stereotype.Service;
+
+import static com.zerobase.user.exception.ErrorCode.ALREADY_REGISTER_USER;
 
 @Service
 @RequiredArgsConstructor
