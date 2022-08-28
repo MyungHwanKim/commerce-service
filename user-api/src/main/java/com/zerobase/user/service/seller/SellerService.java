@@ -14,7 +14,9 @@ public class SellerService {
     private final SellerRepository sellerRepository;
 
     public Optional<Seller> findValidSeller(String email, String password) {
-        return sellerRepository.findByEmailAndPasswordAndVerifyIsTrue(email, password);
+        return sellerRepository.findByEmail(email).stream()
+                .filter(seller -> seller.getPassword().equals(password) && seller.isVerify())
+                .findFirst();
     }
 
     public Optional<Seller> findByIdAndEmail(Long id, String email) {
