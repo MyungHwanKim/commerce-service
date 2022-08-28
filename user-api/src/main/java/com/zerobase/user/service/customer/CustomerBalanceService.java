@@ -2,7 +2,6 @@ package com.zerobase.user.service.customer;
 
 import com.zerobase.user.domain.customer.ChangeBalanceForm;
 import com.zerobase.user.exception.CustomException;
-import com.zerobase.user.exception.ErrorCode;
 import com.zerobase.user.model.CustomerBalanceHistory;
 import com.zerobase.user.repository.CustomerBalanceHistoryRepository;
 import com.zerobase.user.repository.CustomerRepository;
