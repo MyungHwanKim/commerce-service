@@ -1,7 +1,7 @@
 ### 상품 등록 (셀러)
 POST http://localhost:8082/seller/product
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaTXk2UlFwKzU3V2Vyc2toMi9oanoxSEZYQ3VkU0ZxRmxobVQvSWlRbTFFPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjYxNTkwMzc1LCJleHAiOjE2NjE2NzY3NzV9.DyVs08sj-tv6kp3_g-_eRCJwMq8dkG19XMTP8eC8fl0
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaTXk2UlFwKzU3V2Vyc2toMi9oanoxSEZYQ3VkU0ZxRmxobVQvSWlRbTFFPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjYxODU0ODkyLCJleHAiOjE2NjE5NDEyOTJ9.9KkuJ8iYUOuRGczYtKChiWqKWmKUmaKmPhvmvNQIJy8
 
 {
   "description": "상품 설명",
@@ -18,13 +18,13 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaTXk2UlFwKzU3V2Vyc2toMi9oanoxSEZYQ
 ### 상품 아이템 추가 (셀러)
 POST http://localhost:8082/seller/product/item
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaTXk2UlFwKzU3V2Vyc2toMi9oanoxSEZYQ3VkU0ZxRmxobVQvSWlRbTFFPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjYxNTkwMzc1LCJleHAiOjE2NjE2NzY3NzV9.DyVs08sj-tv6kp3_g-_eRCJwMq8dkG19XMTP8eC8fl0
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaTXk2UlFwKzU3V2Vyc2toMi9oanoxSEZYQ3VkU0ZxRmxobVQvSWlRbTFFPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjYxODU0ODkyLCJleHAiOjE2NjE5NDEyOTJ9.9KkuJ8iYUOuRGczYtKChiWqKWmKUmaKmPhvmvNQIJy8
 
 {
   "count": 1,
   "name": "280",
   "price": 100000,
-  "productId": 1
+  "productId": 2
 }
 
 ### 상품 수정
